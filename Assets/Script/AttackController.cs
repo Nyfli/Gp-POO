@@ -36,6 +36,7 @@ public class AttackController : MonoBehaviour
         // Jouer l'effet de particules d'attaque (ne marche pas je sais pas pourquoi)
         if (attackParticleEffect != null)
         {
+            attackParticleEffect.gameObject.SetActive(true);
             attackParticleEffect.Play();
         }
 

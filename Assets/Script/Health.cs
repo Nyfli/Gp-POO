@@ -57,6 +57,7 @@ public class Health : MonoBehaviour
             // Jouer l'effet de particules de dégâts (marche pas, encore et toujours)
             if (takeDamageParticleEffect != null)
             {
+                takeDamageParticleEffect.gameObject.SetActive(true);
                 takeDamageParticleEffect.Play();
             }
         }
@@ -80,6 +81,7 @@ public class Health : MonoBehaviour
             // Jouer l'effet de particules de guérison (ne marche pas, comme toutes les animations, SUPER!)
             if (healParticleEffect != null)
             {
+                healParticleEffect.gameObject.SetActive(true);
                 healParticleEffect.Play();
             }
         }
@@ -90,6 +92,7 @@ public class Health : MonoBehaviour
     {
         if (takeDamageParticleEffect != null)
         {
+            takeDamageParticleEffect.gameObject.SetActive(true);
             takeDamageParticleEffect.Play();
         }
     }
@@ -115,6 +118,7 @@ public class Health : MonoBehaviour
         // Jouer l'effet de particules de guérison automatique (marche pas LOL TROP BIEN)
         if (healParticleEffect != null)
         {
+            healParticleEffect.gameObject.SetActive(true);
             healParticleEffect.Play();
         }
 
